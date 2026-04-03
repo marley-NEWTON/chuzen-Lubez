@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chuzen Lubes - Quality Engine Oils & Services | Mwanza</title>
+  <meta name="description" content="Chuzen Lubes provides quality engine oils and professional engine servicing in Mwanza, Sahara, and Mitimirefu." />
+
+  <!-- Favicon inline SVG as data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230a1628'/%3E%3Cpath d='M20 44 L32 14 L44 44' stroke='%23f97316' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cline x1='24' y1='36' x2='40' y2='36' stroke='%23f97316' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='50' r='4' fill='%234b9eff'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="10" fill="#0a1628"/>
+            <polygon points="32,10 50,48 14,48" fill="none" stroke="#f97316" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <line x1="22" y1="38" x2="42" y2="38" stroke="#f97316" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="32" cy="53" r="4.5" fill="#4b9eff"/>
+            <circle cx="32" cy="53" r="2" fill="#0a1628"/>
+          </svg>
+          <div class="nav-logo-text">
+            Chuzen<em>Lubes</em>
+            <small>Engine Oils & Services</small>
+          </div>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://wa.me/255783623842" target="_blank" class="btn btn-whatsapp nav-cta" style="font-size:0.8rem;padding:0.65rem 1.25rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+          WhatsApp
+        </a>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#products" onclick="closeMobile()">Products</a>
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+        <a href="https://wa.me/255783623842" target="_blank" style="color:#25D366;">💬 WhatsApp Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-accent-bar"></div>
+
+    <!-- Background SVG engine illustration -->
+    <svg class="hero-illustration" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="100" y="150" width="600" height="250" rx="20" fill="white"/>
+      <rect x="130" y="180" width="80" height="190" rx="10" fill="white"/>
+      <rect x="230" y="180" width="80" height="190" rx="10" fill="white"/>
+      <rect x="330" y="180" width="80" height="190" rx="10" fill="white"/>
+      <rect x="430" y="180" width="80" height="190" rx="10" fill="white"/>
+      <rect x="530" y="180" width="80" height="190" rx="10" fill="white"/>
+      <circle cx="170" cy="140" r="30" fill="white"/>
+      <circle cx="270" cy="140" r="30" fill="white"/>
+      <circle cx="370" cy="140" r="30" fill="white"/>
+      <circle cx="470" cy="140" r="30" fill="white"/>
+      <circle cx="570" cy="140" r="30" fill="white"/>
+      <rect x="80" y="390" width="640" height="30" rx="8" fill="white"/>
+      <rect x="50" y="200" width="60" height="120" rx="8" fill="white"/>
+      <rect x="690" y="200" width="60" height="120" rx="8" fill="white"/>
+    </svg>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Trusted in Mwanza Since 2010</span>
+        </div>
+        <h1 class="hero-headline">
+          Quality Lubricants
+          <em>&amp; Engine</em>
+          Services in Mwanza
+        </h1>
+        <p class="hero-sub">
+          Reliable engine oils and expert services for your vehicle. From routine oil changes to full engine servicing — we keep your engine running strong.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/255783623842" target="_blank" class="btn btn-whatsapp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a href="#products" class="btn btn-outline">View Products</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Locations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <div id="trust-bar">
+    <div class="trust-scroll" id="trustScroll">
+      <!-- duplicated for infinite scroll -->
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        Genuine Engine Oils
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        Professional Mechanics
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        Affordable Pricing
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        3 Convenient Branches
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        Same-Day Service
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        Genuine Engine Oils
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        Professional Mechanics
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        Affordable Pricing
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        3 Convenient Branches
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.146 10.44l3.646-3.647a.5.5 0 0 1 .708.708z"/></svg>
+        Same-Day Service
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PRODUCTS & SERVICES ===== -->
+  <section id="products">
+    <div class="container">
+      <div class="products-header reveal">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Products &amp; <span>Services</span></h2>
+        <p style="color:var(--silver);margin-top:1rem;font-size:0.95rem;line-height:1.7;max-width:520px;">
+          From premium engine oils to expert servicing — everything your vehicle needs, all in one place.
+        </p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- PRODUCTS -->
+        <div class="product-card reveal delay-1">
+          <div class="card-icon">
+            <div class="card-icon-bg"></div>
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="28" y="8" width="24" height="8" rx="4" fill="#f97316"/>
+              <rect x="24" y="14" width="32" height="52" rx="8" fill="#1e4976" stroke="#f97316" stroke-width="2"/>
+              <rect x="32" y="20" width="16" height="28" rx="4" fill="#0a1628"/>
+              <rect x="34" y="22" width="4" height="24" rx="2" fill="#4b9eff" opacity="0.5"/>
+              <path d="M36 48 Q40 44 44 48" stroke="#f97316" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <circle cx="40" cy="56" r="4" fill="#f97316"/>
+              <rect x="26" y="62" width="28" height="4" rx="2" fill="#1e4976" stroke="#4b9eff" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="card-tag tag-product">Product</span>
+          <div class="card-body">
+            <div class="card-title">Premium Engine Oil</div>
+            <div class="card-desc">Full synthetic and semi-synthetic engine oils for petrol and diesel engines. Superior protection against wear, heat, and deposits.</div>
+            <div class="card-footer">
+              <div class="card-price">From TSh 25,000</div>
+              <a href="https://wa.me/255783623842" target="_blank" class="card-action">
+                Order Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal delay-2">
+          <div class="card-icon">
+            <div class="card-icon-bg"></div>
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="24" fill="#1e4976" stroke="#4b9eff" stroke-width="2"/>
+              <circle cx="40" cy="40" r="14" fill="#0a1628" stroke="#f97316" stroke-width="1.5"/>
+              <circle cx="40" cy="40" r="6" fill="#f97316"/>
+              <path d="M40 20 L40 26 M40 54 L40 60 M20 40 L26 40 M54 40 L60 40" stroke="#4b9eff" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M26 26 L30.5 30.5 M49.5 49.5 L54 54 M54 26 L49.5 30.5 M30.5 49.5 L26 54" stroke="#4b9eff" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="card-tag tag-product">Product</span>
+          <div class="card-body">
+            <div class="card-title">Gear & Transmission Oil</div>
+            <div class="card-desc">High-performance lubricants for manual and automatic gearboxes. Ensures smooth gear shifts and prolongs transmission life.</div>
+            <div class="card-footer">
+              <div class="card-price">From TSh 18,000</div>
+              <a href="https://wa.me/255783623842" target="_blank" class="card-action">
+                Order Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal delay-3">
+          <div class="card-icon">
+            <div class="card-icon-bg" style="background:radial-gradient(circle,rgba(75,158,255,0.12) 0%,transparent 70%)"></div>
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="30" width="40" height="30" rx="6" fill="#1e4976" stroke="#4b9eff" stroke-width="2"/>
+              <rect x="26" y="22" width="28" height="12" rx="4" fill="#1e4976" stroke="#4b9eff" stroke-width="1.5"/>
+              <circle cx="30" cy="62" r="6" fill="#0a1628" stroke="#f97316" stroke-width="2"/>
+              <circle cx="50" cy="62" r="6" fill="#0a1628" stroke="#f97316" stroke-width="2"/>
+              <circle cx="30" cy="62" r="2" fill="#f97316"/>
+              <circle cx="50" cy="62" r="2" fill="#f97316"/>
+              <rect x="30" y="36" width="20" height="12" rx="3" fill="#0a1628"/>
+              <path d="M34 42 H46" stroke="#4b9eff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="card-tag tag-product">Product</span>
+          <div class="card-body">
+            <div class="card-title">Brake & Hydraulic Fluid</div>
+            <div class="card-desc">DOT 3, DOT 4, and DOT 5.1 brake fluids for reliable braking performance. Resists moisture absorption and maintains consistent pressure.</div>
+            <div class="card-footer">
+              <div class="card-price">From TSh 8,000</div>
+              <a href="https://wa.me/255783623842" target="_blank" class="card-action">
+                Order Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="product-card reveal delay-1">
+          <div class="card-icon" style="background:linear-gradient(135deg,rgba(10,22,40,0.9) 0%,rgba(42,127,212,0.15) 100%)">
+            <div class="card-icon-bg" style="background:radial-gradient(circle,rgba(75,158,255,0.15) 0%,transparent 70%)"></div>
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40 14 C24 14 12 26 12 40 C12 54 24 66 40 66 C56 66 68 54 68 40" stroke="#4b9eff" stroke-width="3" stroke-linecap="round"/>
+              <path d="M52 14 L68 14 L68 30" stroke="#f97316" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M68 14 L52 30" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="40" cy="40" r="10" fill="#1e4976" stroke="#4b9eff" stroke-width="2"/>
+              <path d="M36 40 L39 43 L44 37" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="card-tag tag-service">Service</span>
+          <div class="card-body">
+            <div class="card-title">Full Engine Service</div>
+            <div class="card-desc">Comprehensive engine inspection, cleaning, and tuning. Includes spark plug check, belt inspection, and coolant flush for peak performance.</div>
+            <div class="card-footer">
+              <div class="card-price">From TSh 80,000</div>
+              <a href="https://wa.me/255783623842" target="_blank" class="card-action">
+                Book Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal delay-2">
+          <div class="card-icon" style="background:linear-gradient(135deg,rgba(10,22,40,0.9) 0%,rgba(249,115,22,0.1) 100%)">
+            <div class="card-icon-bg"></div>
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="30" y="10" width="20" height="14" rx="4" fill="#1e4976" stroke="#4b9eff" stroke-width="1.5"/>
+              <path d="M40 24 L40 36" stroke="#f97316" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="40" cy="46" r="14" fill="#1e4976" stroke="#f97316" stroke-width="2"/>
+              <path d="M34 46 L38 50 L46 42" stroke="#4b9eff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 60 L58 60" stroke="#4b9eff" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+              <path d="M28 65 L52 65" stroke="#4b9eff" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+            </svg>
+          </div>
+          <span class="card-tag tag-service">Service</span>
+          <div class="card-body">
+            <div class="card-title">Oil Change Service</div>
+            <div class="card-desc">Fast and professional oil and filter change. We use your preferred oil grade and reset service indicators. Typically done in under 30 minutes.</div>
+            <div class="card-footer">
+              <div class="card-price">From TSh 30,000</div>
+              <a href="https://wa.me/255783623842" target="_blank" class="card-action">
+                Book Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal delay-3">
+          <div class="card-icon" style="background:linear-gradient(135deg,rgba(10,22,40,0.9) 0%,rgba(75,158,255,0.1) 100%)">
+            <div class="card-icon-bg" style="background:radial-gradient(circle,rgba(75,158,255,0.12) 0%,transparent 70%)"></div>
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" y="24" width="44" height="32" rx="6" fill="#1e4976" stroke="#4b9eff" stroke-width="2"/>
+              <rect x="26" y="32" width="28" height="16" rx="4" fill="#0a1628"/>
+              <circle cx="30" cy="58" r="5" fill="#0a1628" stroke="#f97316" stroke-width="2"/>
+              <circle cx="50" cy="58" r="5" fill="#0a1628" stroke="#f97316" stroke-width="2"/>
+              <path d="M24 24 L28 16 L52 16 L56 24" stroke="#4b9eff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M36 40 H44" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+              <path d="M40 36 V44" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="card-tag tag-service">Service</span>
+          <div class="card-body">
+            <div class="card-title">Filter Replacement</div>
+            <div class="card-desc">Oil, air, fuel, and cabin air filter replacement using quality OEM-equivalent parts. Keeps your engine breathing clean and running efficiently.</div>
+            <div class="card-footer">
+              <div class="card-price">From TSh 15,000</div>
+              <a href="https://wa.me/255783623842" target="_blank" class="card-action">
+                Book Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-visual reveal-left">
+          <div class="about-box">
+            <!-- Engine SVG illustration -->
+            <svg class="about-engine-svg" viewBox="0 0 420 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Engine block -->
+              <rect x="60" y="80" width="300" height="160" rx="16" fill="#1e4976" stroke="#4b9eff" stroke-width="2"/>
+              <!-- Cylinders -->
+              <rect x="90" y="60" width="48" height="90" rx="8" fill="#0f2040" stroke="#4b9eff" stroke-width="1.5"/>
+              <rect x="156" y="60" width="48" height="90" rx="8" fill="#0f2040" stroke="#4b9eff" stroke-width="1.5"/>
+              <rect x="222" y="60" width="48" height="90" rx="8" fill="#0f2040" stroke="#4b9eff" stroke-width="1.5"/>
+              <rect x="288" y="60" width="48" height="90" rx="8" fill="#0f2040" stroke="#4b9eff" stroke-width="1.5"/>
+              <!-- Pistons -->
+              <rect x="98" y="70" width="32" height="20" rx="4" fill="#f97316" opacity="0.8"/>
+              <rect x="164" y="88" width="32" height="20" rx="4" fill="#f97316" opacity="0.8"/>
+              <rect x="230" y="74" width="32" height="20" rx="4" fill="#f97316" opacity="0.8"/>
+              <rect x="296" y="82" width="32" height="20" rx="4" fill="#f97316" opacity="0.8"/>
+              <!-- Crankshaft -->
+              <path d="M80 220 Q114 200 148 220 Q182 240 216 220 Q250 200 284 220 Q318 240 340 220" stroke="#f97316" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <!-- Oil pan -->
+              <rect x="80" y="228" width="260" height="32" rx="8" fill="#0f2040" stroke="#4b9eff" stroke-width="1.5"/>
+              <!-- Oil drops -->
+              <ellipse cx="130" cy="244" rx="8" ry="10" fill="#f97316" opacity="0.6"/>
+              <ellipse cx="210" cy="244" rx="8" ry="10" fill="#f97316" opacity="0.6"/>
+              <ellipse cx="290" cy="244" rx="8" ry="10" fill="#f97316" opacity="0.6"/>
+              <!-- Intake manifold -->
+              <rect x="60" y="100" width="20" height="60" rx="6" fill="#1e4976" stroke="#4b9eff" stroke-width="1.5"/>
+              <rect x="340" y="100" width="20" height="60" rx="6" fill="#1e4976" stroke="#4b9eff" stroke-width="1.5"/>
+              <!-- Label -->
+              <text x="210" y="290" text-anchor="middle" fill="#4b9eff" font-size="11" font-family="Barlow Condensed, sans-serif" font-weight="600" letter-spacing="3" opacity="0.6">ENGINE CUTAWAY</text>
+            </svg>
+
+            <div class="about-badge">
+              <div class="about-badge-num">10+</div>
+              <div class="about-badge-text">Years of<br>Trusted Service</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">About <span>Chuzen Lubes</span></h2>
+          <p class="about-text">
+            Chuzen Lubes provides quality engine oils and professional engine servicing with years of trusted experience. Based in Mwanza with branches in Sahara and Mitimirefu, we are your local experts in automotive lubrication and engine care.
+          </p>
+          <p class="about-text" style="margin-top:-1rem;">
+            We stock a wide range of genuine lubricants for all vehicle types — from passenger cars and SUVs to trucks and heavy machinery. Our trained mechanics deliver every service with precision and care.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+              </div>
+              <div>
+                <div class="feature-label">Genuine Products</div>
+                <div class="feature-sublabel">Only authentic engine oils</div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/></svg>
+              </div>
+              <div>
+                <div class="feature-label">Trusted Brand</div>
+                <div class="feature-sublabel">Mwanza's go-to lube shop</div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/></svg>
+              </div>
+              <div>
+                <div class="feature-label">Fast Service</div>
+                <div class="feature-sublabel">Same-day turnaround</div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/></svg>
+              </div>
+              <div>
+                <div class="feature-label">Fair Pricing</div>
+                <div class="feature-sublabel">No hidden charges</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem;">
+            <a href="#contact" class="btn btn-orange">Find Our Branches</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <div class="section-label">Customer Reviews</div>
+        <h2 class="section-title">What Our <span>Clients Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal delay-1">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">Chuzen Lubes changed my car's oil quickly and professionally. The mechanic explained what needed to be done and gave me an honest quote. My engine sounds smoother than ever!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <div class="author-name">James Mwakasege</div>
+              <div class="author-role">Toyota Land Cruiser Owner · Mwanza</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-2">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">I've been buying engine oil from Chuzen Lubes for over 3 years. Always genuine products, always fair prices. I wouldn't trust anyone else with my fleet of delivery vehicles.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">FA</div>
+            <div>
+              <div class="author-name">Fatuma Ally</div>
+              <div class="author-role">Fleet Owner · Sahara Branch Customer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-3">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">Great service at Mitimirefu branch! They replaced my filters and topped up all fluids. Very professional team and very affordable. Highly recommended to all drivers in Mwanza.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PK</div>
+            <div>
+              <div class="author-name">Peter Kyaruzi</div>
+              <div class="author-role">Mitsubishi Pajero Owner · Mitimirefu</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-content reveal-left">
+          <div class="section-label">Stay Updated</div>
+          <div class="newsletter-title">Get <span>Deals &amp; Tips</span> Delivered</div>
+          <div class="newsletter-sub">Sign up for promotions, engine care tips, and service reminders.</div>
+        </div>
+        <div class="reveal-right" style="flex:1;min-width:280px;">
+          <div class="newsletter-form">
+            <input class="newsletter-input" type="email" placeholder="Enter your email address" id="nlEmail" />
+            <button class="btn btn-orange" onclick="subscribeNewsletter()">Subscribe</button>
+          </div>
+          <p id="nlMsg" style="font-size:0.78rem;margin-top:0.5rem;color:var(--orange);display:none;">✓ Thank you! You're subscribed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="reveal" style="margin-bottom:4rem;">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Find &amp; <span>Contact Us</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-cards">
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Phone Numbers</div>
+                <div class="contact-card-value">
+                  <a href="tel:+255783623842">0783 623 842</a> &nbsp;·&nbsp;
+                  <a href="tel:+255712345678">0712 345 678</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Main Branch</div>
+                <div class="contact-card-value">Mwanza City Centre, Mwanza</div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Branch 2</div>
+                <div class="contact-card-value">Sahara Area, Mwanza</div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Branch 3</div>
+                <div class="contact-card-value">Mitimirefu Road, Mwanza</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-wa" style="margin-top:2rem;">
+            <a href="https://wa.me/255783623842" target="_blank" class="btn btn-whatsapp" style="width:100%;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+              Chat with Us on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63746.59754614764!2d32.843785!3d-2.5163600000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19ce7a8b3da9cf9d%3A0xde98e1b38a87e78f!2sMwanza%2C%20Tanzania!5e0!3m2!1sen!2s!4v1697000000000!5m2!1sen!2s"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Chuzen Lubes – Mwanza Location"
+              style="border:0;"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p style="font-size:0.78rem;color:var(--silver);margin-top:0.75rem;text-align:center;">
+            📍 Showing Mwanza city area. Visit any of our 3 branches.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="10" fill="#0a1628"/>
+              <polygon points="32,10 50,48 14,48" fill="none" stroke="#f97316" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+              <line x1="22" y1="38" x2="42" y2="38" stroke="#f97316" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="32" cy="53" r="4.5" fill="#4b9eff"/>
+              <circle cx="32" cy="53" r="2" fill="#0a1628"/>
+            </svg>
+            <div class="nav-logo-text">Chuzen<em>Lubes</em></div>
+          </div>
+          <p class="footer-desc">
+            Quality engine oils and professional engine servicing in Mwanza. Trusted by hundreds of vehicle owners since 2010.
+          </p>
+          <div class="social-links">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/search/top?q=chuzen%20lubes" target="_blank" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/masanja6262" target="_blank" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/255783623842" target="_blank" class="social-link" aria-label="WhatsApp" style="border-color:rgba(37,211,102,0.3);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#25D366" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#products">Products</a>
+            <a href="#products">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact Us</div>
+          <div class="footer-contacts">
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+              0783 623 842
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+              0712 345 678
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+              Mwanza · Sahara · Mitimirefu
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2025 <span>Chuzen Lubes</span>. All rights reserved. Mwanza, Tanzania.
+        </div>
+        <div class="footer-copy">
+          Designed with ♥ for Mwanza's drivers
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WA BUTTON ===== -->
+  <a href="https://wa.me/255783623842" target="_blank" class="floating-wa" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+  </a>
+
+</body>
+</html>
