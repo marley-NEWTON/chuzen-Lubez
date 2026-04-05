@@ -428,11 +428,11 @@
         a.href = `https://wa.me/${waNum}`;
       });
 
-      // Social media
-      document.querySelectorAll('.social-link').forEach(a => {
-        if (a.getAttribute('aria-label') === 'Facebook' && c.facebook) a.href = c.facebook;
-        if (a.getAttribute('aria-label') === 'Instagram' && c.instagram) a.href = c.instagram;
-      });
+      // // Social media
+      // document.querySelectorAll('.social-link').forEach(a => {
+      //   if (a.getAttribute('aria-label') === 'Facebook' && c.facebook) a.href = c.facebook;
+      //   if (a.getAttribute('aria-label') === 'Instagram' && c.instagram) a.href = c.instagram;
+      // });
     }
 
     /* ----------- DASHBOARD STATS ----------- */
